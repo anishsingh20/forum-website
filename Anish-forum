@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+   </head>
+   <title>Forum</title>
+<body>
+<style>
+	.sidenav {
+		padding-top:20px;
+		background-color: #ccc;
+		height:100%;
+	}
+	.row.content{
+		height:450px;
+	}
+	footer {
+      background-color: #ccc;
+      color: white;
+      padding: 15px;
+    }
+    nav {
+    	margin-top:0;
+    	border-radius:100%;
+    }
+    .form-control {
+    	width:300px;
+
+    }
+    .modal-dailog {
+    	padding-top:10px;
+    	border-radius:0;
+    }
+	.nav-stacked a:hover {
+		background-color:yellow;
+		font-family:Tahoma;
+
+
+	}
+	body {
+		background:url("http://www.codebook.in/dist/img/background.png");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+	}
+	</style>
+<nav class="navbar navbar-default">
+	<div class="container-fluid">
+	<div class="navbar-header">
+		<a href="#" class="navbar-brand" style="font-size:30px;font-family:Arial">Forums</a>
+		</div>
+	<form class="navbar-form navbar-left">
+		<div class="input-group">
+		<input type="text" placeholder="Search" class="form-control">
+		<span class="input-group-addon">
+		<span class="glyphicon glyphicon-search"></span>
+		</span>
+		</div>
+		<button class="btn btn-default navbar-btn">Search</button>
+		</form>
+		<button class="navbar-btn btn btn-success navbar-right " data-toggle="modal" href="#mymodal" style="margin-right:50px"><span class="glyphicon glyphicon-user">Login</span></button>
+			<div class="modal fade" id="mymodal">
+				<div class="modal-dailog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h1 class="modal-title">Sign Up</h1>
+							<button class="close" href="#mymodal"> X </button>
+							
+							</div>
+						<div class="modal-body">
+							<div class="form-group" style="border-right:1px solid black">
+								<form class="form-horizontal" >
+								<label>Email</label>
+									<input class="form-control" type="email" placeholder="Email"><br>
+								<label>Password :</label>
+								<input class="form-control" type="password" placeholder="password"><br>
+								<label>Remember Me</label> <input type="checkbox">
+									<p> Forgot Your <a href="#"><i> Password ?</i></a></p>
+									<button class="btn btn-default" type="submit">Sign in</button>
+								</form>
+								
+								</div>
+
+
+
+								<div class="pull-right" style="margin-top:-275px">
+								<div class="form-group">	
+								<label>ALready a Member :</label>
+								<br>
+								
+								<form class="form-horizontal" style="margin-top:-10px ;margin-right:10px">
+								<label>Username</label>
+								<input type="text" placeholder="Username" class="form-control"><br>
+								<label>Password</label>
+								<br>
+								<input type="password" class="form-control" placeholder="Password"><br>
+								<button class="btn btn-info" type="submit">Log in</button>
+								</form>
+								</div>
+								</div>
+								</div>
+								
+
+							<div class="modal-footer">
+									<button class="btn btn-info center-block btn-lg" type="submit">Submit</button>
+									</div>
+								
+								</div>
+								</div>
+
+
+		</nav>
+<div class="row content">
+	<div class="col-sm-2 sidenav">
+		<ul class="nav nav-pills nav-stacked">
+			<li><a href="#" style="font-family:Arial,font-size:10px">Profile</a></li><hr>
+			<li><a href="#">Projects <span class="badge">New</span></a></li><hr>
+			<li><a href="#">Forums </a></li>
+			</ul>
+			</div>
+
+
+<div class="col-md-8 left-text">
+	<div class="panel panel-info">
+		<div class="panel-heading">
+			<h3><a href="#">Recent Topics</a></h3>
+			</div>
+			<div class="panel-body">
+				<div class="list-group">
+				<a class="list-group-item" data-toggle="collapse" href="#mycollapse">Website disclaimer for simple online game <span class="glyphicon glyphicon-chevron-right"></span></a>
+				<div class="panel-collapse collapsing" id="mycollapse">
+					<div class="list-group">
+						<a class="list-group-item">General : <br>
+						<div class="jumbotron">
+					<p class="list-group-item-text" style="font-family:sans-serif;font-size:25px"> Gaming as we all know is loved by everyone so we have included a new<br>
+					Programme which includes gaming tutorials using Java online.<br>
+					Its New Technology and is userfriendly.</p> </a> </div>
+					</div>
+					</div>
+				
+				<a href="#" class="list-group-item"> How to configure mobile friendly page <span class="glyphicon glyphicon-chevron-right"></span></a>
+				
+				<a href="#" class="list-group-item active"> Suggestions<span class="badge">New</span>
+				<p class="list-group-item-text">How can we improve</p>
+				</a>
+				
+				</div>
+				</div>
+				</div>
+				</div>
+
+				<div class="col-md-8 right-text">
+				<div class="panel panel-info">
+					<div class="panel-heading">
+						<h3><a href="#">BRANCH</a>
+						</h3>
+						</div>
+						<div class="panel-body">
+							<div class="row">
+								<div class="col-md-8">
+									<div class="list-group">
+										<a href="#" class="list-group-item">IT-Information Technology: Forums</a>
+										<a href="#" class="list-group-item">CSE-:Computer Scisence Forums</a>
+										<a href="#" class="list-group-item">BME- Mechanical Forums</a>
+										</div>
+										</div>
+										</div>
+										</div>
+
+										</panel>
+										</div>
+
+
+ 		
+ 
+
+</body>
+
+</html>
